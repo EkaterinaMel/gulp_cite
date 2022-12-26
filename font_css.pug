@@ -1,0 +1,26 @@
+extends templates/temp
+include templates/gallery
+
+block content
+    +createGallery(["img/css-text.png", "img/css-probely.png", "img/css-text-decoration.png"])
+    .text2
+        p.
+            <code>font</code> - универсальное свойство, которое позволяет одновременно задать несколько характеристик шрифта и текста.
+            <br>Синтаксис
+            <br><code>font: [font-style||font-variant||font-weight] font-size [/line-height] font-family | inherit</code>
+        p.
+            <code>font-style</code> - определяет начертание шрифта: обычное, курсивное или наклонное. Когда для текста установлено курсивное или наклонное начертание, браузер обращается к системе для поиска подходящего шрифта. Если заданный шрифт не найден, браузер использует специальный алгоритм для имитации нужного вида текста. Результат и качество при этом могут получиться неудовлетворительными, особенно при печати документа.
+            <br>Синтаксис
+            <br><code>font-style: normal | italic | oblique | inherit</code>
+    
+block menu
+    .menu
+        a(href="file:///C:/Users/79146/Desktop/gulp_dev/dist/index.html")
+            .item CSS
+        .item Синтаксис CSS
+        .item Вставка CSS
+        a(href="file:///C:/Users/79146/Desktop/gulp_dev/dist/text_css.html")
+            .item CSS текст
+        a(href="file:///C:/Users/79146/Desktop/gulp_dev/dist/font_css.html")
+            .m.item CSS шрифт
+        .item Блоки

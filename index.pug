@@ -1,0 +1,20 @@
+extends templates/temp
+
+block content
+    p СSS (англ. Cascading Style Sheets — каскадные таблицы стилей) — формальный язык описания внешнего вида документа, написанного с использованием языка разметки.
+    .text
+        img.al(src="img/css1.jpg")
+        p Основным понятием CSS является стиль – т. е. набор правил оформления и форматирования, который может быть  применен к различным элементам страницы. Для присвоения какому-либо элементу определенных характеристик необходимо  один раз описать этот элемент и определить это описание как стиль, а в дальнейшем просто указывать, что элемент получить свойства выбранного стиля.
+    video(src="img/playback.mp4" controls)
+    
+block menu
+    .menu
+        a(href="file:///C:/Users/79146/Desktop/gulp_dev/dist/index.html")
+            .m.item CSS
+        .item Синтаксис CSS
+        .item Вставка CSS
+        a(href="file:///C:/Users/79146/Desktop/gulp_dev/dist/text_css.html")
+            .item CSS текст
+        a(href="file:///C:/Users/79146/Desktop/gulp_dev/dist/font_css.html")
+            .item CSS шрифт
+        .item Блоки

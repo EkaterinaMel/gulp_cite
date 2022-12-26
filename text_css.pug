@@ -1,0 +1,25 @@
+extends templates/temp
+include templates/gallery
+
+block content
+    +createGallery(["img/html.jpg", "img/html.jpg", "img/html.jpg"])
+    .text
+        .item2
+            p Свойство font-size изменяет размер шрифта. Оно задаётся с помощью значения и единицы измерения (em, px, pt, %). Единицы измерения em и % являются относительными и зависят от размера шрифта установ размер зависит от разрешения экрана.
+        .item2
+            p Свойство font-weight изменяет жирность шрифта. Свойство font-weight имеет 2 часто используемых значения: normal (обычное) и bold (жирное). Остальные значения используются очень редко, перечислим их: числовые от 100.
+        .item2
+            p Свойство font-family изменяет шрифт или список шрифтов с помощью которых отображается текст. В качестве значений свойство font-family принимает названия шрифтов (например: font-family: "Tahoma", "Arial") или предопределенные названия группы шрифтов (serif, sans-serif, monospace, fantasy, cursive).
+    .foot
+        p Конец страницы! (Footer)
+block menu
+    .menu
+        a(href="file:///C:/Users/79146/Desktop/gulp_dev/dist/index.html")
+            .item CSS
+        .item Синтаксис CSS
+        .item Вставка CSS
+        a(href="file:///C:/Users/79146/Desktop/gulp_dev/dist/text_css.html")
+            .m.item CSS текст
+        a(href="file:///C:/Users/79146/Desktop/gulp_dev/dist/font_css.html")
+            .item CSS шрифт
+        .item Блоки

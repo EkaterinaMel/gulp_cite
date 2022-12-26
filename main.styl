@@ -1,0 +1,99 @@
+col = #DCDCDC
+style(size)
+    padding size
+    margin size
+
+
+body
+    background-color #164B69
+    font 14px arial
+
+p
+    text-align justify
+    line-height 2
+    text-indent 30px
+    word-spacing 1em
+
+.center-block
+    display block
+    max-width:900px
+    min-height 700px
+    min-width 700px
+    margin 20px auto
+    padding 20px
+    background-color #E3E3E3
+
+.menu
+    display:flex;
+    justify-content:center;
+    font-weight bold
+    margin 5px
+    flex-wrap: wrap
+
+.item
+    style(5px)
+    &:hover
+        background-color col
+    & .m
+        background-color col
+
+.text
+    display flex
+    flex-direction: row-reverse
+    justify-content center
+    width: 100%
+
+.text2
+    display flex
+    justify-content center
+    flex-wrap: wrap
+    margin 20px
+
+.item2
+    width 33%
+    border solid thin col
+    style(10px)
+
+.foot
+    width 98%
+    border solid thin col
+    style(10px)
+    
+img
+    align right
+    margin: 15px
+    & .al
+        margin-top 0px
+
+video
+    display block
+    margin:10px auto
+
+a
+    color black
+    &:hover
+        color black
+        text-decoration none
+
+@media (max-width:600px)
+    .center-block
+        min-width 100%
+        min-height 100%
+    .text
+        display inline
+    img
+        align center
+        width 100%
+        margin 10px auto
+
+    video
+        display block
+        width 100%
+        margin:10px auto
+
+    .item2
+        width:100%
+        margin:10px;
+
+    .foot
+        width 100%
